@@ -13,12 +13,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 30
+    buildToolsVersion '30.0.3'
     defaultConfig {
         applicationId 'fr.neamar.kiss'
         minSdkVersion 15
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 180
         versionName "3.15.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -46,12 +46,12 @@ dependencies {
 
     implementation 'androidx.annotation:annotation:1.1.0'
 
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.4.2'
-    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.4.2'
-    testImplementation 'org.hamcrest:hamcrest-library:2.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.7.0'
+    testImplementation 'org.hamcrest:hamcrest-library:2.2'
 
-    errorproneJavac("com.google.errorprone:javac:9+181-r4173-1")
-    errorprone ("com.google.errorprone:error_prone_core:2.3.4")
+    errorproneJavac('com.google.errorprone:javac:9-dev-r4023-3')
+    errorprone ('com.google.errorprone:error_prone_core:2.5.1')
 }
 
 tasks.withType(JavaCompile).configureEach {
